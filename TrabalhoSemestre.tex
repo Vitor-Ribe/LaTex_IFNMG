@@ -1,0 +1,126 @@
+\documentclass[article]{abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage[alf]{abntex2cite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[bottom=2.0cm,top=2.0cm,left=2.0cm,right=2.0cm]{geometry}
+
+\usepackage{indentfirst}
+\usepackage{hyperref}  %%%%
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black} %%%%
+
+
+\begin{document}
+\title{TÍTULO DO DOCUMENTO}
+
+\pagenumbering{arabic}
+
+\begin{titlepage}
+	\begin{center}
+		\begin{figure}[htb!]
+			\begin{flushleft}
+				\includegraphics[width=3.0cm]{imagens/iflogo.png}
+			\end{flushleft}
+		\end{figure}
+        \vspace{-2.5cm}
+        \hspace{2.1cm}\Large{\textbf{Instituto Federal do Norte de Minas Gerais}}\\
+        \hspace{2.1cm}\Large{Campus Montes Claros}\\
+        \hspace{2.1cm}\Large{Bacharelado em Ciência da Computação}\\
+        \hspace{2.1cm}\Large{DISCIPLINA}\\
+        
+        \vspace{200pt}
+        
+        \LARGE{\textbf{TÍTULO}}\\ %Entre aqui com o número do relatório
+        \Large{SUBTÍTULO}\\ %Entre com o título do experimento
+        
+        \vspace{100pt}
+        
+        
+        \vspace{30pt}
+        \hfill {Discente:}\\
+        \hfill ALUNO\\
+
+        \vspace{25pt}
+        \hfill {Docente:}\\
+        \hfill Prof. Dr. Dra. Me. Ma. \\ %Entre com o nome do professor
+        
+        
+        \vspace{\fill}
+        \vspace{5pt}
+        Agosto\\
+        2024
+          
+	\end{center}
+\end{titlepage}
+
+\newpage
+
+\Large\tableofcontents
+\thispagestyle{plain}
+\newpage
+
+
+\large
+
+\section{Introdução}
+\thispagestyle{plain}
+
+A computação quântica e a mecânica quântica geralmente usam números complexos, mas há uma discussão sobre se essas teorias poderiam ser formuladas usando apenas números reais. No livro \textit{"Introduction to Classical and Quantum Computing"} de Thomas Wong, o autor sugere que isso é possível, argumentando que toda a computação quântica poderia, em teoria, ser reformulada com números reais. Wong explica que conjuntos de portas quânticas, que são os blocos de construção da computação quântica, poderiam funcionar sem precisar de números complexos.
+
+Por outro lado, os artigos \textit{"Quantum Mechanics Must Be Complex"} e \textit{"Quantum Theory Based on Real Numbers Can Be Experimentally Falsified"} oferecem uma visão diferente. Eles apresentam evidências de que os números complexos são realmente necessários na mecânica quântica, tanto em teoria quanto na prática. Este texto compara a visão de Wong com as conclusões desses dois artigos, destacando as diferenças entre eles.
+
+
+\section{Revisão da Seção do Livro de Thomas Wong}
+\thispagestyle{plain}
+
+Na seção 4.6.5 do seu livro, Wong diz que qualquer número complexo \( z \) pode ser separado em dois números reais \( x \) e \( y \), onde \( z = x + iy \). A partir disso, ele propõe que toda a computação quântica poderia ser feita apenas com números reais. Wong também fala que alguns conjuntos de portas quânticas, como {Toffoli, Hadamard} e {CNOT, porta de qubit único}, poderiam funcionar sem criar amplitudes complexas, e ainda assim serem universais, ou seja, capazes de realizar qualquer computação quântica.
+
+Wong sugere que, mesmo sem usar números complexos, esses conjuntos de portas ainda seriam suficientes para fazer tudo o que uma computação quântica precisa fazer. Ele dá exemplos de portas quânticas que mudam as bases de estados quânticos e que, combinadas, podem ser universais. Assim, ele argumenta que, na prática, os números complexos poderiam ser uma conveniência matemática, mas não algo absolutamente necessário. \cite{wong2022introduction}
+
+\section{Análise dos Artigos Científicos}
+\thispagestyle{plain}
+
+\subsection{Quantum Mechanics Must Be Complex}
+
+Este artigo discute que os números complexos são fundamentais na mecânica quântica, especialmente para descrever fenômenos como o emaranhamento quântico e a violação de desigualdades de Bell, que são situações onde as previsões quânticas desafiam as expectativas clássicas. Os autores mostram que tentar descrever tudo apenas com números reais não funciona para esses casos específicos.
+
+Eles explicam que, embora seja possível usar números reais ao dobrar a dimensão do espaço de Hilbert, isso não captura tudo o que é importante nos fenômenos quânticos. Os números complexos não são apenas uma ferramenta útil, mas sim algo essencial para descrever corretamente certos aspectos da física quântica. \cite{avella2022quantum}
+
+\subsection{Quantum Theory Based on Real Numbers Can Be Experimentally Falsified}
+
+Este artigo vai além e sugere que é possível projetar experimentos que provem que uma teoria quântica baseada somente em números reais está errada. Usando um tipo especial de experimento inspirado nos testes de Bell, os autores mostram que as previsões de uma teoria quântica baseada em números reais e uma baseada em números complexos não são as mesmas. Eles realizaram experimentos que confirmam que as teorias baseadas em números reais não conseguem descrever corretamente os resultados.
+
+A conclusão desse artigo é clara: os números complexos são necessários para explicar certos experimentos quânticos. Ao contrário do que Wong sugere, a descrição quântica não pode ser completamente feita apenas com números reais. \cite{renou2021quantum}
+
+\section{Discrepâncias Entre o Livro de Wong e os Artigos Científicos}
+\thispagestyle{plain}
+
+A comparação entre a visão de Wong e os artigos científicos mostra algumas diferenças importantes:
+
+\begin{itemize}
+    \item[I.] Necessidade de Números Complexos:\\
+   Wong sugere que é possível fazer computação quântica usando apenas números reais.\\
+   Porém, os artigos mostram que os números complexos são indispensáveis para descrever corretamente certos experimentos quânticos.
+
+\item[II.] Universalidade de Portas Quânticas:\\
+   Wong afirma que algumas portas quânticas, mesmo sem criar amplitudes complexas, ainda podem ser universalmente computacionais.\\
+   Embora os artigos não falem diretamente sobre as portas quânticas, eles mostram que a estrutura matemática da teoria quântica (incluindo os números complexos) é fundamental para descrever completamente os sistemas quânticos.
+
+\item[III.] Teoria Versus Realidade Experimental:\\
+   Wong considera possível reformular a mecânica quântica usando números reais.\\
+   Já os artigos demonstram que essa reformulação é limitada e não funciona para todos os casos, especialmente quando se trata de experimentos práticos.
+\end{itemize}
+
+
+\section{Conclusão}
+\thispagestyle{plain}
+
+Embora a ideia de Wong seja interessante do ponto de vista teórico, as evidências experimentais e as análises dos artigos científicos mostram que os números complexos são realmente necessários na mecânica quântica. Não se trata apenas de uma conveniência matemática, mas de algo essencial para descrever corretamente os fenômenos quânticos. Reformular tudo em termos de números reais pode ser uma simplificação atraente, mas, na prática, isso não é suficiente para capturar a realidade quântica. Portanto, é importante reconhecer que, para uma compreensão completa e precisa da mecânica quântica, os números complexos são indispensáveis.
+
+\newpage
+\thispagestyle{plain}
+\bibliography{obras}
+
+\vspace{50pt}
+
+\end{document}
